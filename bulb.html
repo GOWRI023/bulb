@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+        body {
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRID5gA6LrpmJKK7iL9mdcxeQh9_OmoEqLnwQ&s");
+          background-repeat: repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+
+<center><img id="myImage" onclick="changeImage()" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180"></center>
+
+<center><p style="color: rgb(255, 255, 255);">Click the light bulb to turn on/off the light.</p></center>
+<h1 style="color: rgb(0, 255, 136);">Lifes of Bulb</h1>
+<h3><p style="color: rgba(41, 230, 255, 0.849);">In the light bulb industry, the Average Rated Life (ARL) <br> is how long it takes for half the light bulbs in a test batch to fail.<br> It's also been called a half-life.<br> For example if 100 bulbs are tested and have an ARL of 1000 hours <br> 50 of the bulbs had died when the test time reached 1000 hours.</p></h3>
+<br>
+<h1><p style="color: rgb(0, 255, 136);">Components of Bulb</p></h1>
+<ul>
+    <h3 style="color: rgba(41, 230, 255, 0.849);"><li>Filament</li>
+    <li>Inert gas</li>
+    <li>Glass bulb</li>
+    <li>Support wires</li>
+    <li>Glass</li>
+    <li>Base</li>
+    <li>Tungsten</li></h3>
+    </ul>
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+  } else {
+    image.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+  }
+}
+</script>
+</body>
+</html>
